@@ -31,7 +31,7 @@
             <button type="submit" class="register-button">Registrati</button>
         </form>
         <div class="login-link">
-            <p>Hai già un account ? <a href="">Accedi</a></p>
+            <p>Hai già un account ? <a href="../view/login.php">Accedi</a></p>
         </div>
     </div>
 </body>

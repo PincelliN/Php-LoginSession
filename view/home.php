@@ -1,3 +1,28 @@
+<?php
+require_once '../config.php';
+/* 
+da fare in tutte le pagine protette da login
+leggere l'id utente dalla sessione
+cercare l'utente nel db
+se non esiste, redirect alla pagina di login
+*/
+
+$id_user = $_SESSION['id_user'];
+
+$sql = 'SELECT * FROM user WHERE id_user = :id_user';
+$query = $db->prepare($sql);
+$query->bindParam(';id_user', $id_user);
+$query->execute();
+
+$user = $query->fetch(PDO::FETCH_OBJ);
+
+if (!$user) {
+    header('Location: ../view/login.php');
+    die;
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
