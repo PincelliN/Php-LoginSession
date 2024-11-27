@@ -50,3 +50,6 @@ $query->bindParam(':password', $password);
 $query->bindParam(':salt', $salt);
 $query->bindParam(':token', $token);
 $query->execute();
+
+//invio l'email con il link per raggiungere la pagina diattivazione
+header('Location:../view/activate.php?token=' . $toke);

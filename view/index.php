@@ -11,7 +11,7 @@
 <body>
     <div class="register-container">
         <h1>Registrazione</h1>
-        <form action="" method="post">
+        <form action="../controller/register.php" method="post">
             <div class="form-input">
                 <label for="name">Nome </label>
                 <input type="text" id="name" name="name" placeholder="Nome" autocomplete="off">

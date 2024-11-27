@@ -1,0 +1,31 @@
+body {
+  background-color: coral;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+h1 {
+  color: rgb(1, 1, 41);
+  text-align: centera;
+}
+.container button {
+  background-color: rgb(2, 2, 87);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.container button a {
+  color: currentColor;
+  text-decoration: none;
+}
+.container button:hover {
+  background-color: green;
+}
