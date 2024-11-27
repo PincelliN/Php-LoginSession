@@ -39,3 +39,14 @@ $salt = substr(md5(uniqid()), 10, 10);
 $token = sha1(uniqid());
 //PASSWORD_BCRYPT è un algoritmo di hashing  per la criptografia delle password che è volutamente lento e costoso computazionalmente 
 $password = password_hash(PEPPER . $password . $salt, PASSWORD_BCRYPT);
+
+//inseriamo il nuovo utente nel db
+
+$sqlUser = 'INSERT INTO user(name,email,password,salt,token)VALUE(:name,:email,:password,:salt,:token)';
+$query = $db->prepare($sqlUser);
+$query->bindParam(':name', $name);
+$query->bindParam(':email', $email);
+$query->bindParam(':password', $password);
+$query->bindParam(':salt', $salt);
+$query->bindParam(':token', $token);
+$query->execute();
