@@ -1,0 +1,51 @@
+body {
+  background-color: coral;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-container {
+  background-color: white;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+}
+h2 {
+  text-align: center;
+  color: rgb(1, 1, 41);
+}
+.form-input {
+  margin-bottom: 10px;
+}
+.form-input label {
+  display: block;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  color: rgb(1, 1, 41);
+}
+.form-input input {
+  padding: 8px;
+  width: 80%;
+  border-radius: 4px;
+}
+.update-button {
+  border-radius: 4px;
+  background-color: rgb(2, 2, 87);
+  color: white;
+  text-transform: uppercase;
+  padding: 3px;
+}
+.login-link {
+  text-align: center;
+}
+.login-link a {
+  text-decoration: none;
+  color: rgb(2, 2, 87);
+}
+.login-link a:hover {
+  text-decoration: underline;
+}
