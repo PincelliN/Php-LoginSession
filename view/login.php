@@ -37,7 +37,7 @@
                     <label for="confirm-password">Conferma Password</label>
                     <input type="password" id="confirm-password" name="confirm-password">
                 </div>
-                <a href="" class="forgot-password">Password dimenticata?</a>
+                <a href="../view/forgot.php" class="forgot-password">Password dimenticata?</a>
                 <button type="submit" class="login-button">accedi</button>
             </form>
             <div class="register-link">
