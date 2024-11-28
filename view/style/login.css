@@ -6,3 +6,34 @@ body {
   justify-content: center;
   align-items: center;
 }
+.container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+}
+.container h1 {
+  text-align: center;
+  color: rgb(1, 1, 41);
+}
+.container label {
+  display: block;
+}
+.container a {
+  text-decoration: none;
+  color: rgb(1, 1, 41);
+}
+.container a:hover {
+  color: green;
+}
+.container button {
+  display: block;
+  margin: 5px auto;
+  color: white;
+  background-color: rgb(1, 1, 41);
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.container button:hover {
+  background-color: green;
+}

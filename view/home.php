@@ -11,7 +11,7 @@ $id_user = $_SESSION['id_user'];
 
 $sql = 'SELECT * FROM user WHERE id_user = :id_user';
 $query = $db->prepare($sql);
-$query->bindParam(';id_user', $id_user);
+$query->bindParam(':id_user', $id_user);
 $query->execute();
 
 $user = $query->fetch(PDO::FETCH_OBJ);
@@ -39,7 +39,7 @@ if (!$user) {
             <!-- <?php echo $user->name; ?> -->
         </h1>
         <a class="button profile" href="">Modifica il profilo</a>
-        <a class="button logout" href="">Logout</a>
+        <a class="button logout" href="../controller/logout.php">Logout</a>
     </div>
 
 </body>

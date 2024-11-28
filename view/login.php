@@ -12,13 +12,13 @@
     <div class="container">
         <h1>Login</h1>
         <?php if (isset($_GET['error'])) { ?>
-        <div class="error">
-            <?php if ($_GET['error'] == 'invalid_user') { ?>
-            <p>Verifica il tuo indirizzo email</p>
-            <?php } ?>
-            <?php if ($_GET['error'] == 'wrong_credential') { ?>
-            <p>Le credenziali non sono valide</p>
-            <?php } ?>
+            <div class="error">
+                <?php if ($_GET['error'] == 'invalid_user') { ?>
+                    <p>Verifica il tuo indirizzo email</p>
+                <?php } ?>
+                <?php if ($_GET['error'] == 'wrong_credential') { ?>
+                    <p>Le credenziali non sono valide</p>
+                <?php } ?>
             <?php } ?>
             <form action="../controller/login.php" method="post">
                 <div class="form-input">
@@ -43,10 +43,7 @@
             <div class="register-link">
                 Non hai un account? <a href="../view/index.php">Registrati</a>
             </div>
-        </div>
-
-
-
+            </div>
     </div>
 </body>
 
